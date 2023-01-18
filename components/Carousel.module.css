@@ -1,0 +1,58 @@
+.carouselSection{
+     background: #F1F6FE;
+     padding: 50px 0px;
+}
+.carouselSection h1 {
+     font-weight: 600;
+     font-size: 40px;
+     line-height: 49px;
+     color: rgba(0, 14, 34, 0.8);
+     text-align: center;
+}
+.carousel{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-width: 950px;
+     margin: 50px auto 0px;
+}
+.carouselItem{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 3rem;
+     padding: 0px 80px;
+}
+.carouselItem p {
+     font-weight: 500;
+     font-size: 22px;
+     line-height: 33px;
+     text-align: center;
+     color: rgba(0, 14, 34, 0.6);
+}
+.client .clientName{
+     font-weight: 600;
+     font-size: 22px;
+     line-height: 33px;
+     color: var(--main-color);
+}
+.client .clientRole{
+     font-weight: 600;
+     font-size: 19px;
+     line-height: 33px;
+     color: rgba(0, 14, 34, 0.6);
+}
+
+@media (max-width: 767px) {
+     .carousel{
+          margin: 20px 0 0;
+     }
+
+     .carouselSection h1{
+          font-size: 28px;
+          line-height: 30px;
+     }
+     .carouselItem p{
+          font-size: 16px;
+     }
+}

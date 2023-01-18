@@ -1,0 +1,60 @@
+.connectSection{
+     display: flex;
+     align-items: center;
+    justify-content: space-between;
+    padding: 50px 60px;
+}
+.introDiv{
+     max-width: 750px;
+}
+.introDiv h1{
+     font-weight: 600;
+     font-size: 63.7211px;
+     line-height: 85px;
+}
+.buttonDiv{
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+}
+.buttonDiv a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--main-color);
+     color: #fff;
+     border-radius: 12px;
+     padding: 15px 20px;
+     max-width: 247px;
+     font-weight: 600;
+     font-size: 21.2404px;
+     line-height: 26px;
+     cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+     .connectSection{
+          flex-direction: column;
+          gap: 2rem;
+     }
+     .introDiv {
+          max-width: 100%;
+     }
+     .introDiv h1{
+          font-size: 40px;
+          line-height: 45px;
+          text-align: center;
+     }
+}
+/* small mobile :320px. */
+@media (max-width: 767px){
+     .connectSection{
+          flex-direction: column;
+          gap: 2rem;
+     }
+     .introDiv h1{
+          font-size: 25px;
+          line-height: 28px;
+          text-align: center;
+          padding: 20px 10px;
+     }
+}

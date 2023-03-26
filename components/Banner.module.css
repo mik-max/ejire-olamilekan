@@ -96,9 +96,9 @@
 /* small mobile :320px. */
 @media (max-width: 767px) {
      .banner{
-          flex-direction: column;
-          padding: 50px 10px;
-          gap: 2rem;
+          flex-direction: column-reverse;
+          padding: 50px 10px 10px;
+          gap: 0rem;
      }
      .introDiv{
           justify-content: center;

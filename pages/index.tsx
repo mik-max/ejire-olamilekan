@@ -5,6 +5,7 @@ import Design from '../components/Design';
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
 import Connect from '../components/Connect';
+import Projects from '../components/Projects';
 export default function Home() {
      return (
           <div>
@@ -17,11 +18,12 @@ export default function Home() {
 
                <Banner/>
                <Design/>
+               <Projects/>
                <Carousel/>
                <Connect/>
                <hr />
                <footer className={styles.footer}>
-                    <p className={styles.copyright}>Copyright © 2022.Ejire Olamilekan</p>
+                    <p className={styles.copyright}>Copyright © 2023.Ejire Olamilekan</p>
                     <ul className={styles.footerMenu}>
                          <li>
                               <a href=""><i className='bx bxl-linkedin'></i></a>
@@ -34,6 +36,7 @@ export default function Home() {
                          </li>
                     </ul>
                </footer>
+               
           </div>
      )
 }

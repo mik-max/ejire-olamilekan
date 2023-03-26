@@ -1,40 +1,94 @@
 .connectSection{
      display: flex;
-     align-items: center;
-    justify-content: space-between;
+     flex-direction: column;
+     border: 1px solid green;
     padding: 50px 60px;
 }
 .introDiv{
-     max-width: 750px;
+     max-width: 950px;
+     margin: 0px auto;
+     /* border: 1px solid green; */
 }
 .introDiv h1{
      font-weight: 600;
-     font-size: 63.7211px;
-     line-height: 85px;
+     font-size: 50px;
+     line-height: 70px;
+     text-align: center;
+}
+.contactForm{
+     padding: 50px 10px;
+     margin: 0px auto;
+}
+.contactForm form{
+     max-width: 950px;
+     /* border: 1px solid red; */
+}
+.inputWrapper{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
+     margin: 20px 0px;
+}
+.inputWrapper input{
+     flex: 50%;
+     width: 100%;
+     background: rgba(162, 162, 162, 0.5);
+     border-radius: 12px;
+     padding: 10px 8px;
+     height: 50px;
+     
+}
+.textareaWrapper{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 20px;
+}
+.textarea{
+     background: rgba(162, 162, 162, 0.5);
+     border-radius: 12px;
+     width: 100%;
+     padding: 25px 20px;
+     height: 260px;
+     resize: none;
 }
 .buttonDiv{
      display: flex;
      justify-content: flex-end;
      align-items: center;
 }
-.buttonDiv a {
+.buttonDiv a, .buttonDiv button {
      display: flex;
      justify-content: center;
      align-items: center;
      background-color: var(--main-color);
      color: #fff;
-     border-radius: 12px;
-     padding: 15px 20px;
+     border-radius: 10px;
+     padding: 10px 20px;
      max-width: 247px;
      font-weight: 600;
-     font-size: 21.2404px;
-     line-height: 26px;
+     font-size: 21px;
+     min-width: 180px;
      cursor: pointer;
+}
+.contact{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
+     flex-wrap: wrap;
+     padding: 10px 0px 30px;
+}
+.contact p{
+     font-size: 30px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
      .connectSection{
           flex-direction: column;
           gap: 2rem;
+          align-items: initial;
+   
      }
      .introDiv {
           max-width: 100%;
@@ -50,11 +104,28 @@
      .connectSection{
           flex-direction: column;
           gap: 2rem;
+          padding: 20px 10px;
      }
      .introDiv h1{
           font-size: 25px;
           line-height: 28px;
           text-align: center;
           padding: 20px 10px;
+     }
+     .contactForm{
+          padding: 50px 10px;
+          margin: 0px 5px;
+     }
+     .contactForm form{
+          max-width: 100%;
+     }
+     .inputWrapper{
+          flex-direction: column;
+     }
+     .inputWrapper input{
+          flex: 100%;
+     }
+     .contact p{
+          font-size: 18px;
      }
 }
